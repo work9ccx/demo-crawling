@@ -8,9 +8,14 @@ import org.json.simple.JSONObject;
 
 public class parserToolJsonObject {
     private static final Logger LOGGER = LogManager.getLogger(mainApplication.class);
-    public static String run(String data) {
+    public static String run(Object data, String key) {
+        String value=null;
         LOGGER.info("Hello parserToolJsonObject",data);
 
-        return null;
+        JSONObject parsingObj;
+        parsingObj = (org.json.simple.JSONObject)data;
+        value = parsingObj.get("").toString();
+
+        return value;
     }
 }

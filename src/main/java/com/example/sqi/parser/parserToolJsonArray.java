@@ -8,9 +8,17 @@ import org.json.simple.JSONArray;
 
 public class parserToolJsonArray {
     private static final Logger LOGGER = LogManager.getLogger(mainApplication.class);
-    public static String run(String data) {
+    public static String run(Object data, String key) {
+        String value=null;
         LOGGER.info("Hello parserToolJsonArray",data);
 
-        return null;
+        JSONArray parsingAra = null;
+        int idx=0;
+        for (Object i : parsingAra = (JSONArray) data) {
+            value = parsingAra.get(idx).toString();
+            idx++;
         }
+
+        return value;
+    }
 }

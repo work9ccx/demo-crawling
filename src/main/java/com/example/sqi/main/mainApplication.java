@@ -13,11 +13,9 @@ public class mainApplication {
     public static void run() {
         String data="";
 
-        LOGGER.debug("Hello Debug level log");
-        LOGGER.info("Hello Info level log");
-        LOGGER.error("Hello Error level log");
+        LOGGER.debug("mainApplication START");
+//        parserToolJsonObject.run(data,"key");
+//        parserToolJsonArray.run(data,"key");
 
-        parserToolJsonObject.run(data);
-        parserToolJsonArray.run(data);
     }
 }
